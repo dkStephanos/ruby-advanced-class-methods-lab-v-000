@@ -19,7 +19,7 @@ class Song
     data = filename.split(" - ")
     song = Song.new
     song.artist_name = data[0]
-    song.name = data[1].slice!(".mp3")
+    song.name = data[1].delete(".mp3")
     song
   end
 
