@@ -20,6 +20,7 @@ class Song
     song = Song.new
     song.artist_name = data[0]
     song.name = data[1].slice!(".mp3")
+    song
   end
 
   def self.create_from_filename(filename)
