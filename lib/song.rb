@@ -9,7 +9,7 @@ class Song
     song
   end
 
-  def name=(name)
+  def self.name=(name)
     @name = name
   end
 
