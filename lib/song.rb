@@ -15,6 +15,16 @@ class Song
     song
   end
 
+  def self.new_from_filename(filename)
+    data = filename.split(" - ")
+    @artist_name = data[0]
+    @name = data[1].slice!(".mp3")
+  end
+
+  def self.create_from_filename(filename)
+
+  end
+
   def self.create_by_name(name)
     song = Song.new
     song.name = name
