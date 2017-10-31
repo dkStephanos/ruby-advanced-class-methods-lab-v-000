@@ -42,6 +42,7 @@ class Song
     @@all.sort_by do |song|
       song.name
     end
+    
   end
 
   def self.all
